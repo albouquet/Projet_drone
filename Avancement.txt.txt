@@ -1,9 +1,0 @@
-Au depart, le drone devait être réalisé à l'aide d'un microcontroleur PIC et d'une camera OV7670.
-Hors, au vu du temps alloué au projet, l'interfacage entre le microcontroleur et la camera prendra trop de temps 
-(necessite la création du protocole de com entre les deux car aucune bibliothéque trouvée).
-De plus, le PIC choisie au départ n'est pas très rapide (20MHz max). 
-Il aurait été necessaire de relié les broches de données de la camera au module wifi.
-Hors, il y a 8 broches paralelles, alors que le module wifi possède un bus serie.
-
-J'ai donc pris la décision de partir sur un ESP-CAM : 
-	une solution intégrée contenant un microcontroleur 32 bits, une camera et un module WIFI
