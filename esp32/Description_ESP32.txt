@@ -1,0 +1,17 @@
+La bibliotheque esp_camera.h contient toutes les fonctions permettant des gérer la camera du module.
+
+Le module ESP32 possède une mémoire externe communiquant en SPI 
+    -> il faut l'activer pour pouvoir compresser les images prises en JPEG.
+    
+La structure camera_config_t contient toutes les informations du comportement de la caméra :
+    -> broches, frequences, format de l'image final (cif, qvga ...), format des pixels (RGB565, YUV, ...) et autres.
+Ce pointeur est à placé en paramètre à la fonction esp_camera_init qui va configurer la camera via I2C.
+
+La capture d'une photo est réalisé avec la fonction esp_camera_fb_get() qui renvoie un pointeur contenant les informations de l'image :
+    -> pointeur en mémoire, taille ...
+
+Avant l'envoi par socket wifi, il est nécessaire de compresser l'image en JPEG :
+  -> Une image de 320x240 en RGB565 (2 octets par pixel) fait 153600 octets.
+  -> En la compressant, elle ne fait plus que dans les 55000 octets.
+
+Attention : pour deux images différente mais de même format, le poids final suite à la compression ne sera pas le même pour les deux images !!
