@@ -1,6 +1,6 @@
 # Projet Drone Camera
 
-![Drone final](images/drone.jpg)
+![Drone final](images/drone.JPG)
 
 ## Description :
 
@@ -22,7 +22,7 @@ La batterie LI-PO 3.7V 1A permet d'alimenter l'ensemble.
 
 Et aussi, un ordinateur portable possédant une carte wifi et une carte graphique pour traiter la video.
 
-![Materiels pour la fabrication du drone](images/materiel.jpg)
+![Materiels pour la fabrication du drone](images/materiel.JPG)
 
 Sur l'ordinateur, j'ai créé **un point d'accès Wifi grâce à hostapd**, permettant au drone de se connecter directement dessus.
 
@@ -112,7 +112,7 @@ et l'émetteur au moteur. Un signal PWM est envoyé à la base du transistor (ag
 determinant la puissance moyenne envoyé au moteur.
 La diode permet d'absorber le courant généré par le moteur en fin de rotation (évite de griller le transistor).
 
-![Schéma montage moteur](images/Capture)
+![Schéma montage moteur](images/Capture.JPG)
 
 Aussi, la Raspberry pi doit être alimenté en 5v. Hors, ayant une batterie 3.7V, j'ai ajouté un convertisseur 
 3.7V vers 5V pour pouvoir l'alimenter (elle ne consomme qu'environ 300mA).
@@ -126,8 +126,8 @@ La totalité du montage consomme en moyenne (rasp  -> 300mA + moteurs -> 4*100mA
 Pour soutenir l'ensemble des composants du drone (moteurs, gyroscope, Raspberry pi, batterie, camera), j'ai réalisé 
 un support en plastique à l'aide du logiciel FreeCad et l'ai imprimé avec mon imprimante 3D.
 
-![Support du drone](images/impression_support.jpg)
-![Support du drone](images/support_drone.jpg)
+![Support du drone](images/impression_support.JPG)
+![Support du drone](images/support_drone.JPG)
 
 
 
