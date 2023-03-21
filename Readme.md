@@ -50,7 +50,7 @@ Il est séparé en trois parties :
 - Un thread pour la gestion des commandes recu par l'utilisateur et la transmission aux moteurs.
 - Un thread pour la gestion du gyroscope et la aussi la gestion des moteurs par celui-ci.
 
-La bibliothéque Picamera, socket, pygpio et threading sont indispensables.
+Les bibliothéques Picamera, socket, pygpio et threading sont indispensables.
 
 #### Les threads :
 
@@ -82,7 +82,7 @@ Ce programme se sépare en trois parties :
 - Un sous-processus est lancé : c'est le programme mpv, permettant d'afficher le contenu vidéo.
 - Un thread permet de récupérer le flux vidéo et de l'envoyer au sous-processus mpv.
 
-Les bibliothéque keyboard, socket, threading et subprocess sont indispensable.
+Les bibliothèques keyboard, socket, threading et subprocess sont indispensables.
 
 #### La gestion du clavier :
 
@@ -91,7 +91,7 @@ Par exemple, lorsque la touche z est pressée, l'octet représentant le z est en
 Celui-ci diminue donc la vitesse des deux moteurs avant, se qui le fait avancer.
 En appuyant à nouveau sur z, le drone se stabilise à nouveau.
 
-Cinq touches sont possibles : 
+Six touches sont possibles : 
 - A pour que le drone prenne de l'altitude (augmente la vitesse de tous les moteurs)
 - E pour que le drone diminue la vitesse de tous les moteurs.
 - Z pour que le drone diminue la vitesse des deux moteurs avant (permet d'avancer).
@@ -135,15 +135,17 @@ un support en plastique à l'aide du logiciel FreeCad et l'ai imprimé avec mon 
 
 Le programme de détéction de mouvement est réalisé en python à l'aide d'opencv.
 
-Le programme principale récupère et affiche les images une à une, tandisqu'un thread calcul les coordonées de la zone 
+Le programme principale récupère et affiche les images une à une, tandis qu'un thread calcul les coordonées de la zone 
 en mouvement.
 
 Les étapes du thread sont les suivantes :
-- Une image est comparé à la précédente toutes les secondes (ou moins)
-- La soustraction de ces deux images permet finalement de les binariser avec un noir la zone qui change et en blanc 
+- Une image est comparée à la précédente toutes les secondes (ou moins)
+- La soustraction de ces deux images permet finalement de les binariser avec en noir la zone qui change et en blanc 
 celle qui ne change pas.
-- La recherche des contours est alors réalisé en réalisant une convolution avec un masque de Sobel et le calcul du gradient.
+- La recherche des contours est alors réalisée en réalisant une convolution avec un masque de Sobel et le calcul du gradient.
 - Les coordonées des contours retenues sont alors envoyées au programme principale qui les colorie en vert sur les images suivantes.
+
+Voir le rapport dans le dossier Analyse video.
 
 Trois programmes sont disponibles dans le git : un permettant de faire le test sur deux images,
 un autre de faire le test sur une vidéo (sans utiliser de thread), et le dernier traite une vidéo avec un thread.
