@@ -1,0 +1,18 @@
+La broche 18 est utilisée pour produire un signal PWM de type hardware (sans consomation CPU donc).
+Les 3 autres broches PWM hardware sont 12,13,19 (plan BCM).
+Le duty_cycle peut varier entre 0 et 1000000 (1000000 produit donc un signal continue). 
+La fréquence utilisée est de 10kHz (800).
+
+import pigpio
+import time
+
+moteur1=pigpio.pi()
+moteur1.set_mode(18,pigpio.OUTPUT)
+moteur1.hardware_PWM(18,800,0)
+time_sleep(3)
+moteur1.hardware_PWM(18,800,250000)
+time_sleep(3)
+moteur1.hardware_PWM(18,800,500000)
+time_sleep(3)
+moteur1.hardware_PWM(18,800,0)
+moteur1.stop()
