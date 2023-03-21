@@ -112,6 +112,8 @@ et l'émetteur au moteur. Un signal PWM est envoyé à la base du transistor (ag
 determinant la puissance moyenne envoyé au moteur.
 La diode permet d'absorber le courant généré par le moteur en fin de rotation (évite de griller le transistor).
 
+![Schéma montage moteur](images/Capture)
+
 Aussi, la Raspberry pi doit être alimenté en 5v. Hors, ayant une batterie 3.7V, j'ai ajouté un convertisseur 
 3.7V vers 5V pour pouvoir l'alimenter (elle ne consomme qu'environ 300mA).
 
