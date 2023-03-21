@@ -112,7 +112,7 @@ et l'émetteur au moteur. Un signal PWM est envoyé à la base du transistor (ag
 determinant la puissance moyenne envoyé au moteur.
 La diode permet d'absorber le courant généré par le moteur en fin de rotation (évite de griller le transistor).
 
-![Schéma montage moteur](images/Capture.JPG)
+![Schéma montage moteur](images/Capture.PNG)
 
 Aussi, la Raspberry pi doit être alimenté en 5v. Hors, ayant une batterie 3.7V, j'ai ajouté un convertisseur 
 3.7V vers 5V pour pouvoir l'alimenter (elle ne consomme qu'environ 300mA).
@@ -157,11 +157,11 @@ parametre une socket réseau. Par conséquent, il ne m'a pas été possible de l
 
 ## Etape de réalisation du projet :
 
-**1. Réflexion sur le materiel et l'aspect global du projet
-2. Réalisation du programme de detection de mouvement
-3. Test de la partie éléctronique du drone
-4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)
-5. Réalisation des deux programmes.**
+**1. Réflexion sur le materiel et l'aspect global du projet**
+**2. Réalisation du programme de detection de mouvement**
+**3. Test de la partie éléctronique du drone**
+**4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)**
+**5. Réalisation des deux programmes.**
 
 
 
@@ -171,5 +171,8 @@ J'ai, au départ, surestimé le temps alloué au projet et suis partie sur une r
 ou d'ESP32. Pendant les vacances d'hiver, je me suis rendu compte que c'était trop lent et qu'il fallait que je change 
 de support. J'ai donc opté pour une Raspberry pi, plus facile à prendre en main et permettant d'outrepasser les réflexions 
 sur la connectique/communication de la caméra et du module wifi notamment.
+
+Aussi, lors du montage de l'ensemble des éléments sur le support du drone, j'ai eu un problème d'ergonomie avec le circuit éléctronique.
+Il m'a été impossible de le placer correctement car je manquais de mou sur les fils des moteurs. 
 
 Au final, mon drone est piloté à distance, et envoie le flux video de la camera qui s'affiche sur l'ordinateur.
