@@ -159,11 +159,11 @@ parametre une socket réseau. Par conséquent, il ne m'a pas été possible de l
 
 ## Etape de réalisation du projet :
 
-**1. Réflexion sur le materiel et l'aspect global du projet**
-**2. Réalisation du programme de detection de mouvement**
-**3. Test de la partie éléctronique du drone**
-**4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)**
-**5. Réalisation des deux programmes.**
+1. Réflexion sur le materiel et l'aspect global du projet
+2. Réalisation du programme de detection de mouvement
+3. Test de la partie éléctronique du drone
+4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)
+5. Réalisation des deux programmes.
 
 
 
