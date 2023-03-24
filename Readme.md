@@ -174,7 +174,4 @@ ou d'ESP32. Pendant les vacances d'hiver, je me suis rendu compte que c'était t
 de support. J'ai donc opté pour une Raspberry pi, plus facile à prendre en main et permettant d'outrepasser les réflexions 
 sur la connectique/communication de la caméra et du module wifi notamment.
 
-Aussi, lors du montage de l'ensemble des éléments sur le support du drone, j'ai eu un problème d'ergonomie avec le circuit éléctronique.
-Il m'a été impossible de le placer correctement car je manquais de mou sur les fils des moteurs. 
-
 Au final, mon drone est piloté à distance, et envoie le flux video de la camera qui s'affiche sur l'ordinateur.
