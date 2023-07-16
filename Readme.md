@@ -1,8 +1,8 @@
-# Projet Drone Camera
+# Projet Drone Caméra
 
 ![Drone final](images/drone.JPG)
 
-## Description :
+## Déscription :
 
 Mon projet consiste à réaliser un drone, muni d'une caméra.
 L'objectif est de pouvoir controler le drone à distance et récupérer en même temps le flux vidéo 
@@ -11,8 +11,7 @@ Le deuxième aspect de mon projet est la traitement de la vidéo recue sur l'ord
 les mouvements dans celle-ci (lorsque le drone est stationnaire).
 
 
-
-## Materiels utilisés :
+## Matériels utilisés :
 
 J'ai réalisé le drone avec une Raspberry pi zero et sa caméra V2 dédiée.
 Quatre petits moteurs de type 720 et leurs helices permettent au drone de prendre de l'altitude.
@@ -22,9 +21,18 @@ La batterie LI-PO 3.7V 1A permet d'alimenter l'ensemble.
 
 Et aussi, un ordinateur portable possédant une carte wifi et une carte graphique pour traiter la video.
 
-![Materiels pour la fabrication du drone](images/materiel.JPG)
+![Matériels pour la fabrication du drone](images/materiel.JPG)
 
 Sur l'ordinateur, j'ai créé **un point d'accès Wifi grâce à hostapd**, permettant au drone de se connecter directement dessus.
+
+
+## Etape de réalisation du projet :
+
+1. Réflexion sur le materiel et l'aspect global du projet
+2. Réalisation du programme de détection de mouvement
+3. Test de la partie éléctronique du drone
+4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)
+5. Réalisation des deux programmes (contrôle du drone coté utilisateur et Raspberry).
 
 
 
@@ -43,7 +51,7 @@ Le role du serveur est dédié au programme de l'ordinateur et le client celui d
 Le drone se connecte donc au serveur à l'aide de deux sockets.
 
 
-### Programme sur la Raspberry pi zero :
+### Programme sur la Raspberry pi zéro :
 
 Il est séparé en trois parties :
 - Le programme principale pour l'envoie du flux vidéo via la camera.
@@ -154,16 +162,6 @@ un autre de faire le test sur une vidéo (sans utiliser de thread), et le dernie
 
 Mon programme fonctionne sur un fichier vidéo, ou directement sur la caméra. Mais la fonction récupérant ces flux vidéos ne prend pas en 
 parametre une socket réseau. Par conséquent, il ne m'a pas été possible de l'inclure dans le programme finale de l'ordinateur.
-
-
-
-## Etape de réalisation du projet :
-
-1. Réflexion sur le materiel et l'aspect global du projet
-2. Réalisation du programme de detection de mouvement
-3. Test de la partie éléctronique du drone
-4. Test des différentes parties des deux programmes (socket, GPIO, clavier, thread)
-5. Réalisation des deux programmes.
 
 
 
