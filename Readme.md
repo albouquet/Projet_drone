@@ -147,11 +147,7 @@ Le programme principale récupère et affiche les images une à une, tandis qu'u
 en mouvement.
 
 Les étapes du thread sont les suivantes :
-- Une image est comparée à la précédente toutes les secondes (ou moins)
-- La soustraction de ces deux images permet finalement de les binariser avec en noir la zone qui change et en blanc 
-celle qui ne change pas.
-- La recherche des contours est alors réalisée en réalisant une convolution avec un masque de Sobel et le calcul du gradient.
-- Les coordonées des contours retenues sont alors envoyées au programme principale qui les colorie en vert sur les images suivantes.
+![Support du drone](images/Etapes_detec_contours.PNG)
 
 Voir le rapport dans le dossier Analyse video.
 
