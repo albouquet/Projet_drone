@@ -147,7 +147,8 @@ Le programme principale récupère et affiche les images une à une, tandis qu'u
 en mouvement.
 
 Les étapes du thread sont les suivantes :
-![Support du drone](images/Etapes_detec_contours.PNG)
+
+![Support du drone](images/Etapes_detec_contours.png)
 
 Voir le rapport dans le dossier Analyse video.
 
