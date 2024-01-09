@@ -10,6 +10,9 @@ envoyé par celui-ci, via un ordinateur.
 Le deuxième aspect de mon projet est la traitement de la vidéo recue sur l'ordinateur, pour détecter
 les mouvements dans celle-ci (lorsque le drone est stationnaire).
 
+ATTENTION : la partie traitement d'image est réalisé SANS les fonctions optimisées d'OpenCV.
+L'objectif étant de mettre en application/tester des méthodes/algorithmes vues en cours. 
+
 
 ## Matériels utilisés :
 
