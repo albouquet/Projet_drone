@@ -30,3 +30,5 @@ while True:
 
 	print(dataX," | ", dataY, " | ", dataZ)
 	time.sleep(0.3)
+
+# contenu supprimé.

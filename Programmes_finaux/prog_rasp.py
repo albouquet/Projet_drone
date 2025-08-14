@@ -135,6 +135,7 @@ def gyroscope():
 		mutex.release()
 		time.sleep(0.5)
 
+# Contenu supprimé.
 
 ############################################################
 
